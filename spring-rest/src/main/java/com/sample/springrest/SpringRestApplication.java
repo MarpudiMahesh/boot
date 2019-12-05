@@ -1,20 +1,18 @@
-package com.example.demo;
+package com.sample.springrest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication	
+@SpringBootApplication
 @RestController
-public class DemoApplication {
+public class SpringRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(SpringRestApplication.class, args);
 	}
-	
-	@GetMapping("/")
-	public String getString(){
-		return "login";
-	}
+
 }
